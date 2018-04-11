@@ -18,6 +18,9 @@
 			<groupId>Waarp</groupId>
 			<artifactId>WaarpR66</artifactId>
 			<version>3.0.8</version>
+			<!-- below 2 lines are added for TRAVIS purpose -->
+			<scope>system</scope>
+			<systemPath>${TRAVIS_BUILD_DIR}/src/main/webapp/WEB-INF/lib/WaarpR66-3.0.8.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>org.snmp4j</groupId>
@@ -43,6 +46,9 @@
 			<groupId>Waarp</groupId>
 			<artifactId>WaarpGatewayFtp</artifactId>
 			<version>3.0.6</version>
+			<!-- below 2 lines are added for TRAVIS purpose -->
+			<scope>system</scope>
+			<systemPath>${TRAVIS_BUILD_DIR}/src/main/webapp/WEB-INF/lib/WaarpGatewayFtp-3.0.6.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -56,17 +62,4 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
-	<build>
-		<finalName>WaarpServer</finalName>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.6</version>
-				<configuration>
-					<webappDirectory>D:/Development/Tools/apache-tomcat-8.0.33/webapps/WaarpServer</webappDirectory>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>
