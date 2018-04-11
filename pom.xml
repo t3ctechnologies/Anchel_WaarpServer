@@ -31,6 +31,9 @@
 			<groupId>WaarpSnmp</groupId>
 			<artifactId>WaarpSnmp</artifactId>
 			<version>3.0.3</version>
+			<!-- below 2 lines are added for TRAVIS purpose -->
+			<scope>system</scope>
+			<systemPath>${TRAVIS_BUILD_DIR}/src/main/webapp/WEB-INF/lib/WaarpSnmp-3.0.3.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>mysql</groupId>
