@@ -44,6 +44,9 @@
 			<groupId>javasysmons</groupId>
 			<artifactId>javasysmon</artifactId>
 			<version>0.3.6</version>
+			<!-- below 2 lines are added for TRAVIS purpose -->
+			<scope>system</scope>
+			<systemPath>${TRAVIS_BUILD_DIR}/src/main/webapp/WEB-INF/lib/javasysmon-0.3.6.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>Waarp</groupId>
