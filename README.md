@@ -19,3 +19,13 @@ several protocols and to enable dynamic pre or post action on transfer or other 
  * Integration, additional development
  * Support, maintenance, phone support
  
+This is the T3C Version
+
+Code status:
+------------
+[![Build Status](https://travis-ci.org/t3ctechnologies/Anchel_WaarpServer.svg?branch=master)](https://travis-ci.org/t3ctechnologies/Anchel_WaarpServer)
+
+License
+----
+
+MIT
