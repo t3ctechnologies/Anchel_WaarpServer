@@ -27,7 +27,7 @@
 		<retrievecmd>R66PREPARETRANSFER -to hosta -file #FILE# -rule rule2 -info DownloadFile</retrievecmd>
     </exec>
     <directory>
-        <serverhome>D:\WaarpHome\WaarpGateway</serverhome>
+       
     </directory>
     <limit>
         <deleteonabort>True</deleteonabort>
@@ -48,9 +48,6 @@
         <blocksize>65536</blocksize>
     </limit>
     <db>
-        <dbdriver>com.mysql.jdbc.Driver</dbdriver>
-        <dbserver>jdbc:mysql://localhost:3306/testwaarp</dbserver>
-        <dbuser>root</dbuser>
-        <dbpasswd>root</dbpasswd>
+        
     </db>
 </config>

@@ -39,7 +39,7 @@
         <trustuseclientauthenticate>True</trustuseclientauthenticate>
     </ssl>
     <directory>
-        <serverhome>D:\WaarpHome\WaarpR66</serverhome>
+        
         <in>in</in>
         <out>out</out>
         <arch>arch</arch>
@@ -48,7 +48,7 @@
     </directory>
     <limit>
         <usefastmd5>True</usefastmd5>
-        <nofastmd5>D:\NEWJARS\gglib\win32\MD5.dll</nofastmd5>
+        <nofastmd5>/</nofastmd5>
         <delayretry>10000</delayretry>
         <timeoutcon>10000</timeoutcon>
         <serverthread>8</serverthread>
@@ -73,10 +73,7 @@
         <limitlowbandwidth>4096</limitlowbandwidth>
     </limit>
     <db>
-        <dbdriver>com.mysql.jdbc.Driver</dbdriver>
-        <dbserver>jdbc:mysql://localhost:3306/testwaarp</dbserver>
-        <dbuser>root</dbuser>
-        <dbpasswd>root</dbpasswd>
+       
     </db>
 	<rest>
 		<restaddress>127.0.0.1</restaddress>

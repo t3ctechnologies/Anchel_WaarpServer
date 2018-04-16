@@ -33,7 +33,7 @@ public class GatewayServerListener extends ContextLoaderListener {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		String propcondition = properties.getProperty("com.sgs.waarpb.auto");
+		String propcondition = properties.getProperty("com.sgs.waarpdb.auto");
 		String mycondition1 = new String("create");
 		if (propcondition.equals(mycondition1)) {
 			String[] gatearray = { gatewayppath, "-initdb" };
