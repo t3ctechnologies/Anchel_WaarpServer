@@ -6,15 +6,11 @@ import java.util.Properties;
 
 import javax.servlet.ServletContextEvent;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.web.context.ContextLoaderListener;
 import org.waarp.gateway.ftp.ExecGatewayFtpServer;
 import org.waarp.gateway.ftp.ServerInitDatabase;
 
 public class GatewayServerListener extends ContextLoaderListener {
-
-	private static final Logger log = LoggerFactory.getLogger(R66ServerListener.class);
 
 	public void contextInitialized(ServletContextEvent arg0) {
 
@@ -43,8 +39,6 @@ public class GatewayServerListener extends ContextLoaderListener {
 	}
 
 	public void contextDestroyed(ServletContextEvent arg0) {
-		log.info("************************************************************");
-		log.info("			WaarpGatewayServer Stoped Successfully			");
-		log.info("************************************************************");
+		System.out.println("GatewayServer terminated");
 	}
 }
