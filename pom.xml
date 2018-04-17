@@ -70,7 +70,8 @@
     	<groupId>javasysmon</groupId>
     	<artifactId>javasysmon</artifactId>
     	<version>0.3.6</version>
-      <optional>true</optional>
+		<scope>system</scope>
+		<systemPath>${TRAVIS_BUILD_DIR}/src/main/webapp/WEB-INF/lib/javasysmon-0.3.6.jar</systemPath>
     </dependency>
     <dependency> 
     	<groupId>com.oracle</groupId>
