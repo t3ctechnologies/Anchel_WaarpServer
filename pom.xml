@@ -81,6 +81,9 @@
 		      <groupId>Waarp</groupId>
 		      <artifactId>WaarpCommon</artifactId>
 		      <version>3.0.8</version>
+			  <!-- below 2 lines are added for TRAVIS purpose -->
+			<scope>system</scope>
+			<systemPath>${TRAVIS_BUILD_DIR}/src/main/webapp/WEB-INF/lib/WaarpCommon-3.0.8.jar</systemPath>
 		</dependency>
 	</dependencies>
 	<build>
