@@ -89,8 +89,17 @@
     <dependency>
     	<groupId>mysql</groupId>
     	<artifactId>mysql-connector-java</artifactId>
-    	<version>[5.1.0,6.0.0)</version>
-    	<optional>true</optional>
+    	<version>5.1.44</version>
+    </dependency>
+	<dependency>
+      <groupId>Waarp</groupId>
+      <artifactId>WaarpFtp-Core</artifactId>
+      <version>3.0.4</version>
+    </dependency>
+    <dependency>
+      <groupId>Waarp</groupId>
+      <artifactId>WaarpFtp-Filesystem</artifactId>
+      <version>3.0.4</version>
     </dependency>
     <dependency>
     	<groupId>commons-codec</groupId>
