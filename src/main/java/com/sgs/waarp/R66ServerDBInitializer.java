@@ -75,11 +75,11 @@ public class R66ServerDBInitializer {
 
 				// TODO Query for MariaDB
 
-				String s3mappingtab = "CREATE TABLE S3BUCKETMAPPING" + "(id int(11) NOT NULL AUTO_INCREMENT,"
+				String s3mappingtab = "CREATE TABLE IF NOT EXISTS S3BUCKETMAPPING" + "(id int(11) NOT NULL AUTO_INCREMENT,"
 						+ "filename varchar(450) NOT NULL," + "specialKey varchar(450) NOT NULL,"
 						+ "s3fileurl varchar(450) NOT NULL," + "processedOn DATETIME," + "PRIMARY KEY (id))";
 
-				String fileNametab = "CREATE TABLE S3FILENAMEHANDLER" + "(id int(11) NOT NULL AUTO_INCREMENT,"
+				String fileNametab = "CREATE TABLE IF NOT EXISTS S3FILENAMEHANDLER" + "(id int(11) NOT NULL AUTO_INCREMENT,"
 						+ "filename varchar(500) NOT NULL," + "uuid varchar(500) NOT NULL," + "processedOn DATETIME,"
 						+ "PRIMARY KEY (id))";
 				stmt.executeUpdate(s3mappingtab);
