@@ -1,8 +1,12 @@
 # Docker file for tomcat
 FROM tomcat:8.0.43-jre8
 
+# Extracting the war started
 ADD . /usr/local/my_app/
-RUN find /usr/local/my_app/ -iname '*.war' -exec cp {} /usr/local/tomcat/webapps/ \;
+RUN unzip /usr/local/my_app/target/waarp.war -d /usr/local/tomcat/webapps/waarp
+RUN rm -rf /usr/local/my_app
+# Extracting the war ended
+
 ENV JPDA_ADDRESS="8000"
 ENV JPDA_TRANSPORT="dt_socket"
 EXPOSE 8080 8000
