@@ -77,7 +77,8 @@ public class R66ServerDBInitializer {
 
 				String s3mappingtab = "CREATE TABLE IF NOT EXISTS S3BUCKETMAPPING" + "(id int(11) NOT NULL AUTO_INCREMENT,"
 						+ "filename varchar(450) NOT NULL," + "specialKey varchar(450) NOT NULL,"
-						+ "s3fileurl varchar(450) NOT NULL," + "processedOn DATETIME," + "PRIMARY KEY (id))";
+						+ "s3fileurl varchar(450) NOT NULL," + "processedOn DATETIME,"+ "isdeleted char(1) NOT NULL,"
+						+ "PRIMARY KEY (id))";
 
 				String fileNametab = "CREATE TABLE IF NOT EXISTS S3FILENAMEHANDLER" + "(id int(11) NOT NULL AUTO_INCREMENT,"
 						+ "filename varchar(500) NOT NULL," + "uuid varchar(500) NOT NULL," + "processedOn DATETIME,"
